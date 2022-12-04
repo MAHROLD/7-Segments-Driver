@@ -22,7 +22,7 @@ tenuErrorStatus SEV_Display(uint8 u8SEVIndxCpy, uint8 u8NumCpy)
 		if (u8NumCpy < 10)
 		{
 			//check which mode it is
-			if(SEV_strConfigSet[u8SEVIndxCpy].ConMode == COMMON_ANODE )
+			if(SEV_strConfigSet[u8SEVIndxCpy].ConMode == COMMON_CATHODE )
 			{
 				//write the num using the helper fun
 				SEV_PutOnBus( u8SEVIndxCpy, au8AnaodeLoc[u8NumCpy]);
